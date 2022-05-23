@@ -34,16 +34,16 @@ function add(event) {
     let title = event.target.dataset.title;
     let id = event.target.dataset.id;
 
-    if (id in cart) {
-        cart[id].qty++;
-    } else {
-        let cartItem = {
-            title: title,
-            price: price,
-            qty: 1
-        };
-        cart[id] = cartItem
-    }
+if (id in cart) {
+    cart[id].qty++;
+} else {
+    let cartItem = {
+        title: title,
+        price: price,
+        qty: 1
+    };
+    cart[id] = cartItem
+}
 
     count++;
     sum += price;
