@@ -1,0 +1,46 @@
+
+/* Home page */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+.product {
+    width: 300px;
+    border: 2px solid greenyellow;
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.added {
+    color: white;
+    background-color: red;
+}
+
+/* Cart page */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: antiquewhite;
+}
+
+td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: azure;
+}
