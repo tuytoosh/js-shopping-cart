@@ -1,6 +1,16 @@
 let cart = {};
 if (localStorage.getItem("cart")) {
     cart = JSON.parse(localStorage.getItem("cart"));
+} else {
+    alert("Cart is empty");
+
+    text = "Cart is empty. ";
+    document.getElementById("table-container").innerHTML = text;
+
+    let goBack = document.createElement("a");
+    goBack.href = "index.html";
+    goBack.textContent = "Go back";
+    document.getElementById("table-container").appendChild(goBack);
 }
 
 let tbody = document.getElementById("tbody");

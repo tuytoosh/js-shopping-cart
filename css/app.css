@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+* {
+    font-family: "Roboto", sans-serif;
+}
 /* Home page */
 .toolbar {
     display: flex;
@@ -27,6 +31,10 @@
 
 /* Cart page */
 
+#table-container {
+    margin: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -43,4 +51,23 @@ td {
 
 tr:nth-child(even) {
     background-color: azure;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-success {
+    background-color: green;
+}
+
+.btn-primary {
+    background-color: blue;
 }
